@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  --white: #fbfbfb;
+  --purple: #6a1cc3;
+
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #e5e5e5;
+  position: relative;
+}
+
+.site-header {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  > .header-top {
+    padding: 2rem;
+    background-color: var(--purple);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    > .navigation {
+      _margin: 2.6rem 1.7rem 1.6rem 2rem;
+      fill: var(--white);
+      width: 32px;
+      height: 24px;
+      justify-self: start;
+      flex-basis: 5%;
+    }
+
+    > h1 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      margin: 0;
+      color: #fbfbfb;
+      text-transform: uppercase;
+      padding-top: 0.3rem;
+      text-align: center;
+      flex-basis: 95%;
+    }
+  }
+  > .header-bottom {
+    margin-top: -4px;
+    > .svg-arrow {
+      fill: var(--purple);
+    }
+  }
+}
+.container {
+  background-color: var(--white);
+  padding: 8.4rem 2.1rem 5.4rem 1.9rem;
+}
