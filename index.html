@@ -12,6 +12,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Checkpoint Webdev Foundation</title>
 </head>
@@ -29,12 +31,127 @@
         <div class="header-bottom">
             <svg xmlns="http://www.w3.org/2000/svg" class="svg-arrow" width="100%" height="100%" viewbox="0 0 100 5"
                 preserveAspectRatio="none">
-                <polygon points="0,0 0,2, 50,5, 100,2, 100,0" />
+                <polygon points="0,0 0,2, 50,5, 100,2, 100,0 " />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-arrow-bright" width="100%" height="100%"
+                viewbox="0 0 100 5" preserveAspectRatio="none">
+                <polygon points="0,0 0,2, 50,5, 100,2, 100,0 50,3" />
             </svg>
         </div>
     </header>
     <section class="container">
-
+        <h2 class="container-heading">students</h2>
+        <p class="fellow-students">Your fellow students</p>
+        <form action="" class="search">
+            <input type="search" name="search" id="search" class="search-input" placeholder="Search for students names">
+            <button type="submit" class="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </button>
+        </form>
+        <section class="filter-option">
+            <div class="classes selects">
+                <select name="classes" id="classes" class="text-dropdown">
+                    <option value="november">NovemberClass2021</option>
+                    <option value="december">DecemberClass2021</option>
+                    <option value="january">JanuaryClass2022</option>
+                    <option value="february">FebruaryClass2022</option>
+                    <option value="march">MarchClass2022</option>
+                </select>
+                <div class="dropdown-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="enrollment selects">
+                <select name="enrollment-status" id="enrollment-status" class="text-dropdown">
+                    <option value="full-time">Full-time</option>
+                    <option value="part-time">Part-time</option>
+                    <option value="three-quarter-time">three-quarter-time</option>
+                </select>
+                <div class="dropdown-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section class="students">
+            <h4>Full-time November Class of 2021</h4>
+            <section class="students-card">
+                <div class="students-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                    </svg>
+                </div>
+                <div class="students-info">
+                    <p>Dmitry Kolesnikov</p>
+                    <a href="#">github.com/Dimi87</a>
+                </div>
+            </section>
+            <section class="students-card">
+                <div class="students-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                    </svg>
+                </div>
+                <div class="students-info">
+                    <p>Justus Siebert</p>
+                    <a href="#">github.com/justussiebert</a>
+                </div>
+            </section>
+            <section class="students-card">
+                <div class="students-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                    </svg>
+                </div>
+                <div class="students-info">
+                    <p>Manuel Hohenadl</p>
+                    <a href="#">github.com/Manoo89</a>
+                </div>
+            </section>
+            <section class="students-card">
+                <div class="students-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                    </svg>
+                </div>
+                <div class="students-info">
+                    <p>Ovidiu Goanta</p>
+                    <a href="#">github.com/Goanta-Ovidiu</a>
+                </div>
+            </section>
+            <section class="students-card">
+                <div class="students-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                    </svg>
+                </div>
+                <div class="students-info">
+                    <p>Patricia Prager</p>
+                    <a href="#">github.com/patprager</a>
+                </div>
+            </section>
+        </section>
     </section>
 </body>
 
