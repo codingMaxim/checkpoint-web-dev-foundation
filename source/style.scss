@@ -1,0 +1,205 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  --white: #fbfbfb;
+  --purple: #6a1cc3;
+  --bright-purple: rgba(136, 73, 207, 1);
+
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #e5e5e5;
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+}
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+}
+
+.site-header {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+
+  > .header-top {
+    padding: 1.5rem;
+    background-color: var(--purple);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    > .navigation {
+      fill: var(--white);
+      width: 32px;
+      height: 24px;
+      justify-self: start;
+      flex-basis: 5%;
+    }
+
+    > h1 {
+      font-size: 1rem;
+      margin: 0;
+      color: var(--white);
+      text-transform: uppercase;
+      padding-top: 0.3rem;
+      text-align: center;
+      flex-basis: 95%;
+    }
+  }
+  > .header-bottom {
+    margin-top: -4px;
+    > .svg-arrow {
+      fill: var(--purple);
+    }
+
+    > .svg-arrow-bright {
+      margin-top: -50px;
+      fill: var(--bright-purple);
+    }
+  }
+}
+.container {
+  background-color: var(--white);
+  padding: 9rem 2.1rem 5.4rem 1.9rem;
+
+  > .container-heading {
+    color: var(--purple);
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  > .fellow-students {
+    line-height: 93.75%;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-bottom: 1.1rem;
+  }
+  > .search {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.2rem;
+    border: 1.75px solid var(--purple);
+    border-radius: 2px;
+
+    > .search-input {
+      all: unset;
+      width: 100%;
+      font-size: 1rem;
+      line-height: 15px;
+      color: var(--purple);
+      padding-top: 0.5rem;
+      padding-left: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    > .search-button {
+      all: unset;
+      position: absolute;
+      right: 10px;
+      top: 5px;
+
+      > svg {
+        fill: var(--purple);
+      }
+    }
+  }
+
+  > .filter-option {
+    display: flex;
+    _justify-content: space-between;
+    width: 100%;
+    gap: 5%;
+    > .selects {
+      position: relative;
+      display: flex;
+      > .text-dropdown {
+        all: unset;
+        border: 1.75px solid var(--purple);
+        color: var(--purple);
+        line-height: 14.25px;
+        padding: 0.62rem;
+        flex-grow: 1;
+        border-radius: 2px;
+      }
+
+      > .dropdown-arrow {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        width: 31px;
+        height: 36px;
+        background-color: var(--bright-purple);
+        border-radius: 1px;
+        > svg {
+          fill: var(--white);
+          margin: 38% 25%;
+        }
+      }
+    }
+    > .classes {
+      flex-grow: 1;
+    }
+  }
+  > .students {
+    margin-top: 2.8rem;
+    > h4 {
+      margin-bottom: 1.2rem;
+    }
+
+    > .students-card {
+      display: flex;
+      margin-bottom: 14px;
+      padding: 15px 79px 14px 13px;
+      border: 2px solid var(--purple);
+      border-radius: 2px;
+      -webkit-box-shadow: 5px 5px 0px 0px #6a1cc3;
+      box-shadow: 5px 5px 0px 0px #6a1cc3;
+      > .students-icon {
+        width: 39px;
+        height: 39px;
+        background-color: var(--bright-purple);
+        border-radius: 2px;
+
+        > svg {
+          fill: var(--white);
+          margin: 30%;
+        }
+      }
+      > .students-info {
+        line-height: 1;
+        padding-top: 0.2rem;
+        padding-left: 2rem;
+        > p {
+          font-size: 16px;
+          font-family: "Source Sans Pro", sans-serif;
+          font-weight: 600;
+          margin-bottom: 0;
+          color: var(--purple);
+        }
+        > a {
+          font-size: 0.6rem;
+          color: var(--purple);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
